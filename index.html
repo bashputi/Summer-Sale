@@ -29,11 +29,11 @@
 <body>
     <header class="bg-yellow py-14">
         <!-- header section -->
-        <section class="flex justify-evenly">
-            <div class="flex items-center">
-                <div class="text-center">
+        <section class="lg:flex lg:justify-evenly">
+            <div class="flex items-center justify-center">
+                <div class="text-center ">
                     <h3 class="text-2xl font-medium mb-11">---SALE FEVER---</h3>
-                     <h1 class="text-6xl font-bold mb-16">Purchase TK 200 or <br> above & get <span class="text-pink">20% off</span></h1>
+                     <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold mb-16">Purchase TK 200 or <br> above & get <span class="text-pink">20% off</span></h1>
                     <div class="flex items-center justify-center">
                     <p class="text-base font-medium mr-4">Use Promo Code</p>
                     <p class="bg-pink text-white py-3.5 px-6 font-semibold text-base rounded-lg">SELL200</p>
@@ -45,16 +45,16 @@
             </div>
         </section>
     </header>
-    <main>
+    <main class="ml-14">
         <!-- main section  -->
      <section class="container mx-auto mt-28">
-        <div class="flex justify-evenly">
+        <div class="lg:flex lg:justify-evenly">
             <!-- All products  -->
             <div>
                 <!-- Kitchenware  -->
                 <div>
-                    <h1 class="text-4xl font-semibold mb-8">Kitchenware</h1>
-                    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5">
+                    <h1 class="text-4xl font-semibold mb-8 text-center lg:text-start">Kitchenware</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         <!-- card 1  -->
                         <div class="card w-80 bg-base-100 shadow-xl" onclick="handleClick(this)">
                               <figure  class="m-4 pt-10 bg-clay">
@@ -110,7 +110,7 @@
                    </div>
                   <!--Sportswear  -->
                   <div class="mt-14">
-                    <h1 class="text-4xl font-semibold mb-8">Sportswear</h1>
+                    <h1 class="text-4xl font-semibold mb-8 text-center lg:text-start">Sportswear</h1>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                          <!-- card 4  -->
                          <div class="card w-80 bg-base-100 shadow-xl" onclick="handleClick(this)">
@@ -167,7 +167,7 @@
                    </div>
                 <!--Furniture  -->
                 <div class="mt-14">
-                    <h1 class="text-4xl font-semibold mb-8">Furniture</h1>
+                    <h1 class="text-4xl font-semibold mb-8 text-center lg:text-start">Furniture</h1>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                          <!-- card 7  -->
                          <div class="card w-80 bg-base-100 shadow-xl" onclick="handleClick(this)">
@@ -226,23 +226,27 @@
             </div>
             <!-- calculate part  -->
             <div >
+             
                 <!-- cupon part  -->
                 <div class="w-[342px] h-[148px] bg-base-100 shadow-xl p-6 mb-6">
                   <p class="font-medium text-2xl mb-4">Have coupon?</p>
-                  <div class="relative">
-                    <input type="text" id="input-coupon" class="input input-bordered w-full pr-16" placeholder="Coupon code"  /> 
+                  <div class="relative" >
+                    <form id="form">
+                    <input type="text" id="input-coupon" class="input input-bordered w-full pr-16" placeholder="Coupon code"  /> </form>
                     <button id="apply" onclick="applyCouponCode(this)" class="btn bg-pink text-white absolute top-0 right-0 rounded-l-none text-xl font-semibold" disabled>Apply</button>
                   </div>
                  
                 </div>
                 <!-- purchase part -->
                 <div class="w-[342px] bg-base-100 shadow-xl p-6 relative">
+                  
                   <p id="product-name" class="font-medium text-base ">Product Name</p>
                   <hr class="my-6">
                   <p class="font-medium text-base">Total price: <span class="text-gray-400" id="total-price">00.00 </span><span class="text-gray-400">TK</span></p>
                   <p class="font-medium text-base py-4">Discount: <span class="text-gray-400" id="discount">00.00 </span><span class="text-gray-400">TK</span></p>
                   <p class="font-medium text-base">Total: <span class="text-gray-400" id="total">00.00 </span><span class="text-gray-400">TK</span></p>
                   <hr class="my-6">
+                
                 </div>
                   
                   <!-- Open the modal using ID.showModal() method -->
@@ -258,7 +262,7 @@
                           </div>
                         </form>
                       </dialog>
-                
+                    
             </div>
 
         </div>

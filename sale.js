@@ -55,9 +55,13 @@ function applyCouponCode(target) {
 }
 
 function goHome(target) {
-    console.log('loura')
-  document.getElementById("total-price").innerText ="00.00";
+    
+ document.getElementById("total-price").innerText = "00.00";
   document.getElementById("discount").innerText = "00.00" ;
-  document.getElementById("total").innerText ="00.00";
-  document.getElementById("input-coupon").value = " " ;
-}
+  document.getElementById("total").innerText ="00.00 ";
+  document.getElementById("product-name").innerText ="Product Name";
+  document.getElementById("form").reset() ;
+  
+  
+      
+    }
