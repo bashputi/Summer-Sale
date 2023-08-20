@@ -54,7 +54,7 @@
                 <!-- Kitchenware  -->
                 <div>
                     <h1 class="text-4xl font-semibold mb-8">Kitchenware</h1>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5">
                         <!-- card 1  -->
                         <div class="card w-80 bg-base-100 shadow-xl">
                             <figure class="m-4 pt-10 bg-clay">
@@ -237,15 +237,29 @@
                  
                 </div>
                 <!-- purchase part -->
-                <div class="w-[342px] bg-base-100 shadow-xl p-6">
+                <div class="w-[342px] bg-base-100 shadow-xl p-6 relative">
                   <p id="product-name" class="font-medium text-base text-pink">Product Name</p>
                   <hr class="my-6">
                   <p class="font-medium text-base">Total price: <span class="text-gray-400">00.00 </span><span class="text-gray-400">TK</span></p>
                   <p class="font-medium text-base py-4">Discount: <span class="text-gray-400">00.00 </span><span class="text-gray-400">TK</span></p>
                   <p class="font-medium text-base">Total: <span class="text-gray-400">00.00 </span><span class="text-gray-400">TK</span></p>
                   <hr class="my-6">
-                  <button class="bg-pink text-white py-2 px-16 rounded-lg text-xl font-semibold">Make Purchase</button>
                 </div>
+                  
+                  <!-- Open the modal using ID.showModal() method -->
+                      <button class="absolute -mt-6 bg-pink text-white py-2 px-16 rounded-lg text-xl font-semibold ml-10" onclick="my_modal_5.showModal()">Make Purchase</button>
+                      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <form method="dialog" class="modal-box">
+                          <img src="./images/congo.png" alt="" class=" mx-auto">
+                          <h3 class="font-bold text-5xl text-center">Congratulations</h3>
+                          <p class="py-4 text-center text-gray-500 text-xl">Your Purchase the product</p>
+                          <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn mx-auto text-xl font-semibold bg-pink text-white px-8">Go Home</button>
+                          </div>
+                        </form>
+                      </dialog>
+                
             </div>
 
         </div>
