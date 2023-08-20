@@ -48,7 +48,7 @@
     <main>
         <!-- main section  -->
      <section class="container mx-auto mt-28">
-        <div>
+        <div class="flex justify-evenly">
             <!-- All products  -->
             <div>
                 <!-- Kitchenware  -->
@@ -69,7 +69,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                   <h2 class="card-title text-sm font-semibold">K. Accessories</h2>
-                                  <p class="text-gray-500"><span id="price">39.00</span>TK</p>
+                                  <p class="text-gray-500"><span class="price">39.00</span>TK</p>
                             </div>
                         </div>
                         <!-- card 2  -->
@@ -86,7 +86,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                   <h2 class="card-title text-sm font-semibold">K. Accessories</h2>
-                                  <p class="text-gray-500"><span id="price">25.00</span>TK</p>
+                                  <p class="text-gray-500"><span class="price">25.00</span>TK</p>
                             </div>
                         </div>
                         <!-- card 3  -->
@@ -103,11 +103,11 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                   <h2 class="card-title text-sm font-semibold">Home Cooker</h2>
-                                  <p class="text-gray-500"><span id="price">49.00</span>TK</p>
+                                  <p class="text-gray-500"><span class="price">49.00</span>TK</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                   </div>
                   <!--Sportswear  -->
                   <div class="mt-14">
                     <h1 class="text-4xl font-semibold mb-8">Sportswear</h1>
@@ -126,7 +126,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                   <h2 class="card-title text-sm font-semibold">Sports Back Cap</h2>
-                                  <p class="text-gray-500"><span id="price">49.00</span>TK</p>
+                                  <p class="text-gray-500"><span class="price">49.00</span>TK</p>
                             </div>
                         </div>
                         <!-- card 5  -->
@@ -143,7 +143,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                   <h2 class="card-title text-sm font-semibold">Full Jersey Set</h2>
-                                  <p class="text-gray-500"><span id="price">69.00</span>TK</p>
+                                  <p class="text-gray-500"><span class="price">69.00</span>TK</p>
                             </div>
                         </div>
                         <!-- card 6  -->
@@ -160,15 +160,15 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                   <h2 class="card-title text-sm font-semibold">Sports cates</h2>
-                                  <p class="text-gray-500"><span id="price">159.00</span>TK</p>
+                                  <p class="text-gray-500"><span class="price">159.00</span>TK</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                   </div>
                 <!--Furniture  -->
                 <div class="mt-14">
                     <h1 class="text-4xl font-semibold mb-8">Furniture</h1>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                         <!-- card 7  -->
                         <div class="card w-80 bg-base-100 shadow-xl">
                             <figure class="m-4 pt-10 bg-clay">
@@ -183,7 +183,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                   <h2 class="card-title text-sm font-semibold">Single Relax Chair</h2>
-                                  <p class="text-gray-500"><span id="price">185.00</span>TK</p>
+                                  <p class="text-gray-500"><span class="price">185.00</span>TK</p>
                             </div>
                         </div>
                         <!-- card 8  -->
@@ -200,8 +200,9 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                   <h2 class="card-title text-sm font-semibold">Children play</h2>
-                                  <p class="text-gray-500"><span id="price">299.00</span>TK</p>
-                            </div>
+                                  <p class="text-gray-500"><span class="price">299.00</span>TK</p>
+                                  
+                                </div>
                         </div>
                         <!-- card 9  -->
                         <div class="card w-80 bg-base-100 shadow-xl">
@@ -217,7 +218,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                   <h2 class="card-title text-sm font-semibold">Flexible Sofa</h2>
-                                  <p class="text-gray-500"><span id="price">339.00</span>TK</p>
+                                  <p class="text-gray-500"><span class="price">339.00</span>TK</p>
                             </div>
                         </div>
                     </div>
@@ -225,8 +226,26 @@
               
             </div>
             <!-- calculate part  -->
-            <div>
-
+            <div >
+                <!-- cupon part  -->
+                <div class="w-[342px] h-[148px] bg-base-100 shadow-xl p-6 mb-6">
+                  <p class="font-medium text-2xl mb-4">Have coupon?</p>
+                  <div class="relative">
+                    <input type="text" id="input-coupon" class="input input-bordered w-full pr-16" placeholder="Coupon code"  /> 
+                    <button class="btn bg-pink text-white absolute top-0 right-0 rounded-l-none text-xl font-semibold">Apply</button>
+                  </div>
+                 
+                </div>
+                <!-- purchase part -->
+                <div class="w-[342px] bg-base-100 shadow-xl p-6">
+                  <p id="product-name" class="font-medium text-base text-pink">Product Name</p>
+                  <hr class="my-6">
+                  <p class="font-medium text-base">Total price: <span class="text-gray-400">00.00 </span><span class="text-gray-400">TK</span></p>
+                  <p class="font-medium text-base py-4">Discount: <span class="text-gray-400">00.00 </span><span class="text-gray-400">TK</span></p>
+                  <p class="font-medium text-base">Total: <span class="text-gray-400">00.00 </span><span class="text-gray-400">TK</span></p>
+                  <hr class="my-6">
+                  <button class="bg-pink text-white py-2 px-16 rounded-lg text-xl font-semibold">Make Purchase</button>
+                </div>
             </div>
 
         </div>
